@@ -24,6 +24,10 @@ class CategoricalFeature extends Feature {
     return this.categoricalOptions.indexOf(categoricalValue);
   }
 
+  public int getNumberOfOptions() {
+    return categoricalOptions.size();
+  }
+
   @Override
   public String toString() {
     return ("FeatureName: " + this.name +
